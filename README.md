@@ -41,6 +41,19 @@ Outputs one `.edl` file per section into the same folder.
 2. **File → Import Timeline → Import EDL** and select an EDL file
 3. When prompted to relink media, point Resolve to your footage folder
 
+## Applying zoom to all clips
+
+FPV footage typically needs a slight zoom in to hide the fisheye border. After importing the EDL:
+
+1. Open the **Edit** page
+2. Click on any clip in the timeline, then **Select All** (Ctrl+A) to select every clip
+3. Open the **Inspector** panel (top right)
+4. Under **Transform**, set **Zoom X** and **Zoom Y** to `0.790` (or link them with the chain icon and set one value)
+
+This crops into the frame slightly, removing the dark fisheye edges on all clips at once.
+
+> **Tip:** If you want a different zoom level, 0.790 is a starting point — adjust to taste.
+
 ## Config
 
 Edit the top of `make_edl.py` to change paths or settings:
