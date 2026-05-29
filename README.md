@@ -38,8 +38,9 @@ Outputs one `.edl` file per section into the same folder.
 ## Importing into DaVinci Resolve
 
 1. Create a new project set to **1920×1080 @ 60fps**
-2. **File → Import Timeline → Import EDL** and select an EDL file
-3. When prompted to relink media, point Resolve to your footage folder
+2. Go to the **Media** page and import your footage folder into the media pool first — Resolve needs the files present before it can link them to the EDL
+3. Go to the **Edit** page, then **File → Import Timeline → Import EDL** and select an EDL file
+4. Resolve will match the EDL clips to the files already in your media pool
 
 ## Applying zoom to all clips
 
