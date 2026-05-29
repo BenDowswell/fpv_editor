@@ -1,0 +1,4 @@
+*.edl
+test310.py
+__pycache__/
+*.pyc
